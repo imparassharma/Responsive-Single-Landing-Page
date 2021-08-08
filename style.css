@@ -1,0 +1,133 @@
+html,body{
+    overflow-x: hidden;
+}
+
+body{
+    margin: 5vh 10vw;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg);
+    font-family: 'Open Sans', sans-serif;
+}
+
+header img{
+    width: 50%;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+}
+
+.main img{
+    margin-top: 50px;
+}
+
+.container1 h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    color: white;
+    margin-top: 50px;
+}
+
+.container1 p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.container1 a{
+    display: flex;
+    width: 70%;
+    height: 5vh;
+    border-radius: 25px;
+    background-color: white;
+    margin-left: 45px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 1px 5px 0px 1px rgba(0, 0, 0, 0.411);
+    color: hsl(257, 40%, 49%);
+}
+
+.social-link{
+    display: flex;
+    height: 10vh;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.social-link a{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link a img{
+    width: 70%;
+}
+
+@media screen and (min-width: 1028px) {
+
+    body{
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+        background-position: center;
+        margin: 8vh 5vw auto 5vw;
+        overflow-y: hidden;
+    }
+    
+    header img{
+        width: 15%;
+    }
+
+    .main{
+        flex-direction: row;
+        margin-top: 50px;
+        height: 68vh;
+    }
+
+    .main img{
+        width: 80vw;
+        height: 65vh;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    .container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50px;
+        margin-top: -100px;
+    }
+
+    .container1 h1{
+        font-size: 38px;
+        width: 70%;
+    }
+
+    .container1 p{
+        font-size: 20px;
+        text-align: left;
+        margin-top: -10px;
+        line-height: 25px;
+        width: 85%;
+    }
+
+    .container1 a{
+        width: 35%;
+        height: 7vh;
+        margin-left: 0;
+        border-radius: 50px;
+        font-weight: 600;
+    }
+
+    .social-link{
+        width: 20%;
+        margin-left: 85%;
+        height: 7vh;
+    }
+}
